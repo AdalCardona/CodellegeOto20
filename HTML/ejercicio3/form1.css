@@ -1,0 +1,26 @@
+#prin{
+	margin: 20px 50px;
+	background-color: #21FF58;
+	padding-left: 25%;
+	padding-right: 25%;
+	border: 1px solid black;
+	border-collapse:collapse;
+}
+#prin > p{
+	font-weight:bold;
+	font-size:24px;
+}
+.cen{
+	float:auto;
+}
+
+#prin > div{
+	background-color:#8AE600;
+}
+.rad, td, tr{
+	text-align:center;
+	border:1px solid black;
+	border-radius: 5px;
+	border-collapse:collapse;
+	width:100%;
+}
