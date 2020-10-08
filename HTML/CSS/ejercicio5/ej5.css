@@ -50,7 +50,7 @@ i{
 #abj{
 	font-size:120px;
 	position:absolute;
-	right:45%;
+	left:13%;
 	top:65%;
 
 }
@@ -62,7 +62,7 @@ i{
 	height:0.7rem;
 	position:absolute;
 	margin-left:16%;
-	right:48%;
+	left:0%;
 }
 
 #bt{
@@ -70,8 +70,8 @@ i{
 	height:0.7rem;
 	position:absolute;
 	margin-left:16%;
-	bottom:51.8%;
-	right:48%;
+	bottom:52.8%;
+	left:0%;
 }
 
 #le{
@@ -97,6 +97,6 @@ span, a{
 	height:8rem;
 	position:absolute;
 	top:65%;
-	right:-10.5%;
+	left:40.8%;
 	margin-right:25%;
 }
