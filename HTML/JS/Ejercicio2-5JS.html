@@ -1,0 +1,33 @@
+<DOCTYPE html>
+	<html>
+		<head>
+			<title>Codellege JS</title>
+		</head>
+		<body>
+			<script>
+				var quintog=["Aldair", " Daniel", " Adal", " Jose", " Octavio", " Daniel", " Jesus", " Daniel"]
+				var result=removeDuplicates(quintog);
+				
+				function removeDuplicates(num){
+					var x,
+						len=num.length,
+						out=[],
+						obj={};
+						
+					for (x=0; x<len; x++){
+						obj[num[x]]=0;
+						console.log(obj);
+					}
+					
+					for (x in obj){
+						out.push(x);
+						console.log(out);
+					}
+					return out;
+					}
+				console.log(quintog);
+				console.log(result);
+			</script>
+	
+		</body>
+	</html>

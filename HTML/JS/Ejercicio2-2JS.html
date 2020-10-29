@@ -1,0 +1,32 @@
+<DOCTYPE html>
+	<html>
+		<head>
+			<title>Codellege JS</title>
+		</head>
+		<body>
+			<script>
+				var quintog=["Aldair", " Daniel", " Adal", " Jose", " Octavio", " Daniel", " Jesus", " Daniel"]
+				var mf=1;
+				var m=0;
+				var item;
+				
+				for (i=0; i<quintog.length; i++){
+					for (j=i; j<quintog.length; j++){
+						if (quintog[i]===quintog[j]){
+							m++;
+						}
+						
+						if (mf<m){
+							mf=m;
+							item=quintog[i];
+						}
+					}
+					m=0
+				}
+				
+				
+				console.log("El dato que mas se repite es: " + item)
+			</script>
+	
+		</body>
+	</html>
