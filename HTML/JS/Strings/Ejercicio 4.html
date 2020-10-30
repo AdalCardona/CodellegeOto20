@@ -1,0 +1,20 @@
+<DOCTYPE html>
+	<html>
+		<head>
+			<title>Codellege JS</title>
+		</head>
+		<body>
+			<input type="text" id="txto"/>
+			<input type="button" value="Submit" onclick="crr()"/>
+			<script>
+					function crr(){
+					var str=document.getElementById("txto").value;
+					var pal=str.substr(0,4);
+					var sr=str.search("@")
+					var dom=str.slice(sr)
+					var txt=pal + "..." + dom;
+					console.log(txt);
+					}
+			</script>
+		</body>
+	</html>
