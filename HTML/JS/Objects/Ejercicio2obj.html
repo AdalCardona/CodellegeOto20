@@ -1,0 +1,36 @@
+<DOCTYPE html>
+	<html>
+		<head>
+			<title>Codellege JS</title>
+		</head>
+		<body>
+			<h1>Borra una propiedad de un objeto</h1>
+			<p><label for="nombre">Nombre:</label>
+			<input type="text" id="nombr"/></p>
+			<p><label for="apell">Apellido:</label>
+			<input type="text" id="apell"/></p>
+			<p><label for="ed">edad:</label>
+			<input type="number" id="ed"/></p>
+			<p><label for="naci">Nacimiento:</label>
+			<input type="date" id="naci"/></p>
+			<input type="button" value="Submit" onclick="obj()"/> 
+			<input type="button" value="Delete" onclick="dele()"/> 
+			<script>
+					function obj(){
+						obje={
+							nombre:document.getElementById("nombr").value,
+							apellido:document.getElementById("apell").value,
+							edad:document.getElementById("ed").value,
+							nacimiento:document.getElementById("naci").value
+						}
+						
+						console.log(obje);
+					}
+					
+					function dele(){
+						delete obje.nacimiento;
+						console.log(obje);
+					}
+			</script>
+		</body>
+	</html>

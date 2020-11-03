@@ -1,0 +1,33 @@
+<DOCTYPE html>
+	<html>
+		<head>
+			<title>Codellege JS</title>
+		</head>
+		<body>
+			<h1>Detecte e imprima las propiedades de un objeto</h1>
+			<p><label for="nombre">Nombre:</label>
+			<input type="text" id="nombr"/></p>
+			<p><label for="apell">Apellido:</label>
+			<input type="text" id="apell"/></p>
+			<p><label for="ed">edad:</label>
+			<input type="number" id="ed"/></p>
+			<p><label for="naci">Nacimiento:</label>
+			<input type="date" id="naci"/></p>
+			<input type="button" value="Submit" onclick="obj()"/>
+			<script>
+					function obj(){
+						obje={
+							nombre:document.getElementById("nombr").value,
+							apellido:document.getElementById("apell").value,
+							edad:document.getElementById("ed").value,
+							nacimiento:document.getElementById("naci").value
+						}
+						
+						console.log("Tu Nombre es: " + obje.nombre);
+						console.log("Tu Apellido es: " + obje.apellido);
+						console.log("Tu Edad es: " + obje.edad);
+						console.log("Tu Fecha de nacimiento es: " + obje.nacimiento);
+					}
+			</script>
+		</body>
+	</html>
