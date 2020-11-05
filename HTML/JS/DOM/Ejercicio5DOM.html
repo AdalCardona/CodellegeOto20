@@ -1,0 +1,32 @@
+<DOCTYPE html>
+	<html>
+		<head>
+			<title>Codellege JS</title>
+			<style>
+			table, td, tr{
+				border:1px solid black;
+				padding:5px;
+				border-collapse:collapse;
+				text-align:center;
+				}
+			.hd{
+				color:blue;
+				}
+			</style>
+		</head>
+		</body>
+			<h1>Crear una tabla utilizando JS</h1>
+			<h3>Temperaturas promedio en invierno</h3>
+			<script>
+			var tem=[["<b class='hd'>Ciudades</b>", "<b class='hd'>Temperatura 1</b>", "<b class='hd'>Temperatura 2</b>", "<b class='hd'>Temperatura 3</b>"], ["<b>Ciudad 0</b>", 12, 10, 11], ["<b>Ciudad 1</b>", 5, 0, 2 ], ["<b>Ciudad 2</b>", 10, 8, 10]]
+			document.write("<table>");
+			for(i=0;i<tem.length; i++){
+				document.write("<tr>");
+				for (j=0;j<tem.length;j++){
+				document.write("<td>" + tem[i][j] + "</td>");
+				}
+			}
+			document.write("</table>");
+		</script>
+	</body>
+</html>

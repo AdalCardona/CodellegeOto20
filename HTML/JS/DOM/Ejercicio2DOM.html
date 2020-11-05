@@ -1,0 +1,23 @@
+<DOCTYPE html>
+	<html>
+		<head>
+			<title>Codellege JS</title>
+		</head>
+		<body>
+			<h1>Detecte e imprima las propiedades de un objeto</h1>
+			<p><label for="nombre">Nombre:</label>
+			<input type="text" id="nombr"/></p>
+			<p><label for="apell">Apellido:</label>
+			<input type="text" id="apell"/></p>
+			<button id="cambio" onclick="imp()">Cambio</button>
+		<script>
+					function imp(){
+						var nombre=document.getElementById("nombr").value;
+						var apellido=document.getElementById("apell").value;
+						
+						console.log("Nombre: " + nombre)
+						console.log("Apellido: " + apellido)
+					}
+			</script>
+		</body>
+	</html>

@@ -1,0 +1,23 @@
+<DOCTYPE html>
+	<html>
+		<head>
+			<title>Codellege JS</title>
+		</head>
+		<body>
+			<h1>Remueva valores de un elemento dropdown list de HTML</h1>
+			<p><label for="ciudades">Ciudades:</label>
+			<select id="ciudades" name="ciudades">
+			<option value="Santa Catarina" id="Santa">Santa Catarina</option>
+			<option value="Monterrey" id="Monterrey">Monterrey</option>
+			<option value="Guadalupe" id="Guadalupe">Guadalupe</option>
+			</select>
+			<button id="cambio" onclick="cambio()">Cambio</button>
+		<script>
+					function cambio(){
+						document.getElementById("Santa").innerHTML="San Pedro";
+						document.getElementById("Monterrey").innerHTML="Garcia";
+						document.getElementById("Guadalupe").innerHTML="Dr.Arroyo";
+					}
+			</script>
+		</body>
+	</html>

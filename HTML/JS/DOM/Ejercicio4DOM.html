@@ -1,0 +1,54 @@
+<DOCTYPE html>
+	<html>
+		<head>
+			<title>Codellege JS</title>
+			<style>
+			table, td, th, tr{
+				border:1px solid black;
+				border-collapse: collapse;
+				text-align: center;
+			}
+			#cambio1, #cambio2, #cambio3{
+				font-weight:bold;
+				font-size:20px;
+				}
+			</style>
+		</head>
+		<body>
+			<h1>Cambiar el contenido de una celda dentro de una tabla de HTML con JS</h1>
+			<table>
+				<tr>
+					<th>Alumno</th>
+					<th>Calificacion 1</th>
+					<th>Calificacion 2</th>
+					<th>Calificacion 3</th>
+				</tr>
+				<tr>
+					<td>Cesar</td>
+					<td id="cambio1">5</td>
+					<td>8</td>
+					<td>7</td>
+				</tr>
+				<tr>
+					<td>Alexis</td>
+					<td>8</td>
+					<td id="cambio2">9</td>
+					<td>9</td>
+				</tr>
+				<tr>
+					<td>Alejandro</td>
+					<td>8</td>
+					<td>7</td>
+					<td id="cambio3">6</td>
+				</tr>
+			</table>
+			<button id="cambio" onclick="cambio()">Cambio</button>
+		<script>
+					function cambio(){
+						document.getElementById("cambio1").innerHTML=4;
+						document.getElementById("cambio2").innerHTML=7;
+						document.getElementById("cambio3").innerHTML=9;
+					}
+			</script>
+		</body>
+	</html>
